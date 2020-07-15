@@ -214,8 +214,8 @@
                                         </li>
                                         <li><a href="# ">BRANDS</a>
                                             <ul class="submenu">
-                                                <li><a href="# ">Veronica</a></li>
-                                                <li><a href="# ">Blackstone</a></li>
+                                                <li><a href="https://veronica.co.in/">Veronica</a></li>
+                                                <li><a href="https://blackstone.co.in/">Blackstone</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about">ABOUT US</a></li>

@@ -5,7 +5,7 @@
     <!-- This is for url rewrite -->
     <!-- when using in local machine , use path to the assets folder here instaed of "/" from root directoryy i.e. /www/html/-->
     <!-- ex : if your assets folder is /www/html/MilstoneIndustries/  the replace "/" by "/MilstoneIndustries/"-->
-    <base href="/"/>
+    <base href="/var/www/html/MilestoneIndustries/"/>
     <!-- <base href="/Milstone/MilestoneIndustries/"/> -->
 
     <meta charset="utf-8">
