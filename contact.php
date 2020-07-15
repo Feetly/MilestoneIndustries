@@ -1,4 +1,4 @@
-<base href="/var/www/html/MilestoneIndustries/"/>
+<base href="/"/>
 <!-- <base href="/Milstone/MilestoneIndustries/"/> -->
 
 <script src="jquery-3.5.1.min.js"></script>
