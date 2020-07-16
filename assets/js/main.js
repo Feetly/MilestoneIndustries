@@ -273,9 +273,8 @@
     });
 
     $('.slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
         arrows: false,
         asNavFor: '.slider-for',
         dots: true,

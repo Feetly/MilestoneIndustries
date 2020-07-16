@@ -101,7 +101,7 @@
                     $output .= '<li class="service-list">
                         <img height="30px" src='.$imagepath.' class="alignnone size-full wp-image-156">
                         <a href='.$urlOfproduct.'>'.$nameOfproduct.'</a>
-                    </li><br>';
+                    </li>';
                 }
             }
         }

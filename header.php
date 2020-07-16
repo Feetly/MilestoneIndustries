@@ -8,16 +8,15 @@
 <!--for search box-->
 <style>
     #output li a {
-        border: 1px solid #ddd;
+        border: 0px solid #ddd;
         border-radius: 5px;
         /* Add a border to all links */
-        margin-top: -1px;
+        margin-top: -3px;
         /* Prevent double borders */
         background-color: #f6f6f6;
         /* Grey background color */
         padding-left: 20%;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 0px;
         /* Add some padding */
         text-decoration: none;
         /* Remove default text underline */
