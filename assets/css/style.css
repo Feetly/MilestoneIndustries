@@ -9761,7 +9761,7 @@ div.logo a img {
     
     .mobile_menu {
         padding-top: 15px;
-        padding-right: 0px;
+        padding-right: 10px;
     }
     
     .form-contact .form-msg textarea {
@@ -9818,8 +9818,8 @@ div.logo a img {
     }
     
     .input-group .form-control {
-        width: 40% !important;
-        right: 55%;
+        width: 60% !important;
+        right: 30%;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
@@ -9830,7 +9830,7 @@ div.logo a img {
     }
     
     .input-group .btn-secondary {
-        right: 35%;
+        right: 0%;
     }
     
     #output {

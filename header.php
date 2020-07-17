@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-xl-3 col-lg-3 col-6" style="flex-wrap: nowrap; ">
+                        <div class=" col-xl-3 col-lg-3 col-4" style="flex-wrap: nowrap; ">
                             <div class="menu-wrapper d-flex align-items-center justify-content-end ">
                                 <!-- Main-menu -->
                                  <!--<div class="main-menu d-none d-lg-block "> -->
@@ -260,7 +260,7 @@
                     </div>
                 </div>
                 <!-- Mobile Menu -->
-                <div class="col-12 header-stick">
+                <div class="col-12">
                     <div class="mobile_menu d-block d-lg-none"></div>
                 </div>
             </div>
