@@ -128,7 +128,7 @@
                                         for($i=0;$i<$n;$i++)
                                         {
                                             echo '<div><a class = "img-pop-up" href="'.$images[$i].'">';
-                                            echo '<img class="card-img rounded-0" src="'.$images[$i].'" alt="" style="width: 100%;">';
+                                            echo '<img class="card-img rounded-0" src="'.$images[$i].'" alt="" style="width: 100%; position: absolute; top: 50px;">';
                                             echo '</a></div>';
                                         }
                                     ?>
@@ -139,7 +139,7 @@
                                         for($i=0;$i<$n;$i++)
                                         {
                                             echo '<div>';
-                                            echo '<img src="'.$images[$i].'" style="height:100px; padding-left:10px; padding-right:10px;">';
+                                            echo '<img src="'.$images[$i].'" style="height:100px; padding-left:10px; padding-right:10px; position: absolute; top: auto;">';
                                             echo '</div>';
                                         }
                                     ?>
@@ -148,15 +148,15 @@
                         <div class="col-lg-5 mb-5 mb-lg-0">
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="#">
-                                        <h2> <?php echo $productname; ?></h2>
+                                        <h2 style="position: absolute; top: 20px; margin-bottom: 20px;"> <?php echo $productname; ?></h2>
                                     </a>
                                     <p>
                                         <?php 
-                                                echo '<table class="table">';
+                                                echo '<table class="table" >';
                                                 foreach($array as $key=>$value) {
                                                     foreach($value as $k=>$v) {
                                                         if($k!='link')
-                                                            echo '<tr class="table-success"><td>'.$k.'</td><td>'.$v.'</td></tr>';
+                                                            echo '<tr style="border: solid 1px #A5A9BD; background-color: #ECEDF3; color: #A5A9BD"><td>'.$k.'</td><td style="float: right">'.$v.'</td></tr>';
                                                     }
                                                 } 
                                                 echo '</table>';
