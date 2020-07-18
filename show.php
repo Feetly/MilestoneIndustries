@@ -128,7 +128,7 @@
                                         for($i=0;$i<$n;$i++)
                                         {
                                             echo '<div><a class = "img-pop-up" href="'.$images[$i].'">';
-                                            echo '<img class="card-img rounded-0" src="'.$images[$i].'" alt="" style="width: 100%; position: absolute; top: 50px;">';
+                                            echo '<img class="card-img rounded-0" src="'.$images[$i].'" alt="" style="width: 100%;">';
                                             echo '</a></div>';
                                         }
                                     ?>
@@ -139,7 +139,7 @@
                                         for($i=0;$i<$n;$i++)
                                         {
                                             echo '<div>';
-                                            echo '<img src="'.$images[$i].'" style="height:100px; padding-left:10px; padding-right:10px; position: absolute; top: auto;">';
+                                            echo '<img src="'.$images[$i].'" style="height:100px; padding-left:10px; padding-right:10px;">';
                                             echo '</div>';
                                         }
                                     ?>
