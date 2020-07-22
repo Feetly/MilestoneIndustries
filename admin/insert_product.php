@@ -111,7 +111,7 @@
         echo $PrFile;
 
         //create folder for products
-        if (mkdir($PrFile,0744)||is_dir($PrFile)) {
+        if (mkdir($PrFile,0755)||is_dir($PrFile)) {
             echo "Yes , Root got created !!";
         } else {
             die("[-] ERROR while creating root(product) folder");
@@ -122,7 +122,7 @@
         echo $Photos_folder;
 
         //create folder for photoes of products inside their folder
-        if (mkdir($Photos_folder,0744)||file_exists($Photos_folder)) {
+        if (mkdir($Photos_folder,0755)||file_exists($Photos_folder)) {
             echo "Yes , photos folder got created !!";
         } else {
             die("[-] ERROR while creating photoes folder");
@@ -156,67 +156,67 @@
         $array  = array();
 
         if ($_POST['brand']) {
-            $array['brand'] = $_POST['brand'];
+            $array['Brand'] = $_POST['brand'];
         }
         if ($_POST['grinder-type']) {
-            $array['grinder-type'] = $_POST['grinder-type'];
+            $array['Grinder Type'] = $_POST['grinder-type'];
         }
         if ($_POST['model-name']) {
-            $array['model-name'] = $_POST['model-name'];
+            $array['Model Name'] = $_POST['model-name'];
         }
         if ($_POST['usage']) {
-            $array['usage'] = $_POST['usage'];
+            $array['Usage'] = $_POST['usage'];
         }
         if ($_POST['wattage']) {
-            $array['wattage'] = $_POST['wattage'];
+            $array['Wattage'] = $_POST['wattage'];
         }
         if ($_POST['color']) {
-            $array['color'] = $_POST['color'];
+            $array['Color'] = $_POST['color'];
         }
         if ($_POST['place-of-origin']) {
-            $array['place-of-origin'] = $_POST['place-of-origin'];
+            $array['Place of Origin'] = $_POST['place-of-origin'];
         }
         if ($_POST['no-of-jars']) {
-            $array['no-of-jars'] = $_POST['no-of-jars'];
+            $array['No of Jars'] = $_POST['no-of-jars'];
         }
         if ($_POST['voltage']) {
-            $array['voltage'] = $_POST['voltage'];
+            $array['Voltage'] = $_POST['voltage'];
         }
         if ($_POST['warrenty']) {
-            $array['warrenty'] = $_POST['warrenty'];
+            $array['Warranty'] = $_POST['warrenty'];
         }
         if ($_POST['nspeed']) {
-            $array['nspeed'] = $_POST['nspeed'];
+            $array['No. of Speed Settings'] = $_POST['nspeed'];
         }
         if ($_POST['motorhp']) {
-            $array['motorhp'] = $_POST['motorhp'];
+            $array['Motor Hp'] = $_POST['motorhp'];
         }
         if ($_POST['housing']) {
-            $array['housing'] = $_POST['housing'];
+            $array['Housing'] = $_POST['housing'];
         }
         if ($_POST['certification']) {
-            $array['certification'] = $_POST['certification'];
+            $array['Certification'] = $_POST['certification'];
         }
         if ($_POST['dimensions']) {
-            $array['dimensions'] = $_POST['dimensions'];
+            $array['Dimensions'] = $_POST['dimensions'];
         }
         if ($_POST['box-content']) {
-            $array['box-content'] = $_POST['box-content'];
+            $array['Box Content'] = $_POST['box-content'];
         }
         if ($_POST['nblades']) {
-            $array['nblades'] = $_POST['nblades'];
+            $array['No. of Blades'] = $_POST['nblades'];
         }
         if ($_POST['bodyshape']) {
-            $array['bodyshape'] = $_POST['bodyshape'];
+            $array['Body Shape'] = $_POST['bodyshape'];
         }
         if ($_POST['additionalinfo']) {
-            $array['additionalinfo'] = $_POST['additionalinfo'];
+            $array['Additional Info'] = $_POST['additionalinfo'];
         }
         if ($_POST['category']) {
-            $array['category'] = $_POST['category'];
+            $array['Category'] = $_POST['category'];
         }
         if ($_POST['vproduct_link']) {
-            $array['link'] = $_POST['vproduct_link'];
+            $array['Link'] = $_POST['vproduct_link'];
         }
 
         $json = json_encode(array('data' => $array), JSON_PRETTY_PRINT);

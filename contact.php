@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Business HTML-5 Template </title>
+    <title>Contact Us</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -244,7 +244,7 @@
 
                     <!-- this div is for map -->
                     <div class="section">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.506224427294!2d72.82398501498047!3d18.95323798715848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfabad9ebd25%3A0xd853a08e2ce24f9a!2sMilestone%20Industries!5e0!3m2!1sen!2sin!4v1594631850228!5m2!1sen!2sin" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.506224427294!2d72.82398501498047!3d18.95323798715848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfabad9ebd25%3A0xd853a08e2ce24f9a!2sMilestone%20Industries!5e0!3m2!1sen!2sin!4v1594631850228!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
 
                     <script>

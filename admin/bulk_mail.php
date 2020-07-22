@@ -36,15 +36,16 @@
             //Server settings
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'mail.mbvl.in';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = $sender_mail;                     // SMTP username
-            $mail->Password   = $sender_password;                               // SMTP password
+            $mail->Username   = $sender_mail_up;                     // SMTP username
+            $mail->Password   = $sender_password_up;                               // SMTP password
             $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = '465';                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
             //Recipients
-            $mail->setFrom($sender_mail , 'Milestone Industries');
+            $mail->setFrom($sender_mail , 'Milestone Business Ventures LLP');
+			$mail->addReplyTo('reply@mbvl.in', 'Milestone Business Ventures LLP');
 
             $mail->addAddress($reciever_mail);               // Name is optional
 
@@ -111,7 +112,7 @@
             if($res) {
                 while($row = mysqli_fetch_assoc($res)) {
                     //send emails here 
-                    send_email($sender_email , $sender_password , $row[$email_col] , $message);
+                    send_email($sender_email_up , $sender_password_up , $row[$email_col] , $message);
                 }
             } else {
                 echo "ERROR while selecting emails";

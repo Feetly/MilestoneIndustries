@@ -40,7 +40,7 @@
                     </form>
                </div>
                <a href="#">Forgot Password</a> 
-               <a href="../index.php">Back to Home</a>
+               <a href="#">Back to Home</a>
            </div>
         	<?php 
         	

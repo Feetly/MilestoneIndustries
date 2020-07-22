@@ -1,21 +1,23 @@
 <?php 
 	//while checking in your system, please make valid changes here 
 	$servername 	= "localhost";
-	$username   	= "dhruve";
-	$password   	= "proweb";
+	$username   	= "mbvlin";
+	$password   	= "";
+	//$username   	= "root";
+	//$password   	= "";
 
 
     //data base for emails (subscription)
     //email table :
     $email_table    = "emails";
     $email_col      = "email";
-    $email_database 		= "subscribers";
+    $email_database 		= "mbvlin_subscribers";
     $isSubed = "isSubed";
 
 
     //database of products
     //product table :
-    $product_database	= "products";
+    $product_database	= "mbvlin_products";
 	$product_table  = "product";
     $product_name   = "prod_name";
     $product_sideinfo   = "prod_description";
@@ -31,10 +33,13 @@
     $otp_table = "otp";
     $feedback_table = "feedback";
 
-    $sender_email = '';
+    $sender_email = 'donotreply@mbvl.in';
     $sender_password = '';
-
-    $otpTime = 2;
+	
+	$sender_email_up = 'updates@mbvl.in';
+    $sender_password_up = '';
+	
+    $otpTime = 1;
 
 
     //this is product files path

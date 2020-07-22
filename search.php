@@ -1,10 +1,11 @@
+<base href = '/'/>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Search Page </title>
+    <title>Product </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -77,17 +78,16 @@ html,body
         die("Error while using database !!");
     }
 
-    if(isset($_POST['submit'])) {
         //echo $_POST['search'].'<br>';
         //echo $_POST['category'].'<br>';
 
         //take posted data from header.php
-        $src = $_POST['search'];
-        $ctg = $_POST['category'];
+        $src = $_REQUEST['search'];
+        //$ctg = $_POST['category'];
 
         //first take all product from database and then show them (add link to their seperate page)
         if($src != "") {
-            $sql = "select * from $product_table where $product_name like '%$src%'";
+            $sql = "select * from $product_table where $category like '%$src%'";
             $res = mysqli_query($conn , $sql);
             if(!$res) {
                 echo "[-] Error while querying in product database";
@@ -97,8 +97,6 @@ html,body
                 //}
             }
         }
-    }
-
 
 ?>
 
