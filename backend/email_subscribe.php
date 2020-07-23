@@ -17,7 +17,7 @@
             //Server settings
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'mail.mbvl.in';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = $sender_mail;                     // SMTP username
             $mail->Password   = $sender_password;                               // SMTP password
@@ -25,7 +25,8 @@
             $mail->Port       = '465';                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
             //Recipients
-            $mail->setFrom($sender_mail , 'Milestone Industries');
+            $mail->setFrom($sender_mail , 'Milestone Business Ventures LLP');
+			$mail->addReplyTo('reply@mbvl.in', 'Milestone Business Ventures LLP');
 
             $mail->addAddress($reciever_mail);               // Name is optional
 
@@ -42,7 +43,7 @@
                 <h2>Greetings From Milestone , <br>
                 You have subscribed to our channel successfully !!!
                 </h2>
-                <h3><a href="#">Click here to unsubscribe</a></h3>
+                <h3><a href="mbvl.in/backend/unsub.php?email='.$reciever_email.'">Click here to unsubscribe</a></h3>
             ';
             //  href link : path/unsub.php?email='.$reciever_email.'
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';

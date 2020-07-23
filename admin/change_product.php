@@ -123,27 +123,27 @@
      $jsondata = file_get_contents($jsonfile);
      $array = json_decode($jsondata , true);
 
-    $Attr[0]  = $array['data']['brand'];          
-    $Attr[1]  = $array['data']['grinder-type'];   
-    $Attr[2]  = $array['data']['model-name'];     
-    $Attr[3]  = $array['data']['usage'];          
-    $Attr[4]  = $array['data']['wattage'];        
-    $Attr[5]  = $array['data']['color'];           
-    $Attr[6]  = $array['data']['place-of-origin']; 
-    $Attr[7]  = $array['data']['no-of-jars'];      
-    $Attr[8]  = $array['data']['voltage'];         
-    $Attr[9]  = $array['data']['warrenty'];        
-    $Attr[10] = $array['data']['nspeed'];          
-    $Attr[11] = $array['data']['motorhp'];         
-    $Attr[12] = $array['data']['housing'];         
-    $Attr[13] = $array['data']['certification'];   
-    $Attr[14] = $array['data']['dimensions'];      
-    $Attr[15] = $array['data']['box-content'];     
-    $Attr[16] = $array['data']['nblades'];         
-    $Attr[17] = $array['data']['bodyshape'];       
-    $Attr[18] = $array['data']['additionalinfo'];  
-    $Attr[19] = $array['data']['category'];  
-    $Attr[20] = $array['data']['link'];  
+    $Attr[0]  = $array['data']['Brand'];          
+    $Attr[1]  = $array['data']['Grinder Type'];   
+    $Attr[2]  = $array['data']['Model Name'];     
+    $Attr[3]  = $array['data']['Usage'];          
+    $Attr[4]  = $array['data']['Wattage'];        
+    $Attr[5]  = $array['data']['Color'];           
+    $Attr[6]  = $array['data']['Place of Origin']; 
+    $Attr[7]  = $array['data']['No of Jars'];      
+    $Attr[8]  = $array['data']['Voltage'];         
+    $Attr[9]  = $array['data']['Warranty'];        
+    $Attr[10] = $array['data']['No. of Speed Settings'];          
+    $Attr[11] = $array['data']['Motor Hp'];         
+    $Attr[12] = $array['data']['Housing'];         
+    $Attr[13] = $array['data']['Certification'];   
+    $Attr[14] = $array['data']['Dimensions'];      
+    $Attr[15] = $array['data']['Box Content'];     
+    $Attr[16] = $array['data']['No. of Blades'];         
+    $Attr[17] = $array['data']['Body Shape'];       
+    $Attr[18] = $array['data']['Additional Info'];  
+    $Attr[19] = $array['data']['Category'];  
+    $Attr[20] = $array['data']['Link'];  
 
      //add here and in input box if there are any new attributes
      
@@ -193,7 +193,7 @@
             <label for="usr">wattage : </label>
             <input type="text" class="form-control" name="wattage"        value="<?php echo $Attr[4]; ?>"   autocomplete="off" placeholder="Wattage"><br>
             <label for="usr">color : </label>
-            <input type="text" class="form-control" name="color"           value="<?php echo $Attr[5]; ?>"   autocomplete="off" placeholder="Color"><br>
+	    <textarea class="form-control rounded-0" placeholder="Color"  autocomplete="off" name="color" rows="3"><?php echo $Attr[5]; ?></textarea><br>
             <label for="usr">place of origin : </label>
             <input type="text" class="form-control" name="place-of-origin" value="<?php echo $Attr[6]; ?>" autocomplete="off" placeholder="Place Of Origin"><br>
             <label for="usr">no of jars : </label>
@@ -213,13 +213,13 @@
             <label for="usr">dimensions : </label>
             <input type="text" class="form-control" name="dimensions"       value="<?php echo $Attr[14]; ?>"    autocomplete="off" placeholder="Dimensions"><br>
             <label for="usr">box-content : </label>
-            <input type="text" class="form-control" name="box-content"      value="<?php echo $Attr[15]; ?>"    autocomplete="off" placeholder="Box Content"><br>
+	    <textarea class="form-control rounded-0" placeholder="Box Content"  autocomplete="off" name="box-content" rows="3"><?php echo $Attr[15]; ?></textarea><br>
             <label for="usr">nblades : </label>
             <input type="text" class="form-control" name="nblades"          value="<?php echo $Attr[16]; ?>"    autocomplete="off" placeholder="Number Of blades"><br>
             <label for="usr">bodyshape : </label>
             <input type="text" class="form-control" name="bodyshape"        value="<?php echo $Attr[17]; ?>"    autocomplete="off" placeholder="Body shape"><br>
             <label for="usr">additionalinfo : </label>
-            <input type="text" class="form-control" name="additionalinfo"   value="<?php echo $Attr[18]; ?>"   autocomplete="off" placeholder="Additional Info"><br>
+            <textarea class="form-control rounded-0" placeholder="Additional Info"  autocomplete="off" name="additionalinfo" rows="3"><?php echo $Attr[18]; ?></textarea><br>
             <label for="usr">sidepanel info: </label>
             <textarea class="form-control rounded-0" placeholder="This will be shown on side panel" autocomplete="off" name="sideinfo" rows="3"><?php echo $sideinfo; ?></textarea>
             <br>

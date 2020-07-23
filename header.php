@@ -221,13 +221,13 @@
                                         <li>
                                             <a href="#">SOCIAL</a>
                                             <ul class="submenu" style="width: 120px;">
-                                                <li><a href="updating.php">Twitter</a></li>
-                                                <li><a href="updating.php">Facebook</a></li>
-                                                <li><a href="updating.php">Whatsapp</a></li>
-                                                <li><a href="updating.php">Instagram</a></li>
-                                                <li><a href="updating.php">Youtube</a></li>
-                                                <li><a href="updating.php">Blogpost</a></li>
-                                                <li><a href="updating.php">Pinterest</a></li>
+                                                <li><a href="https://twitter.com/Milestone_BVL">Twitter</a></li>
+                                                <li><a href="https://www.facebook.com/Milestone.BVLP">Facebook</a></li>
+                                                <li><a href="https://wa.me/917718050963">Whatsapp</a></li>
+                                                <li><a href="https://www.instagram.com/milestone_business/">Instagram</a></li>
+                                                <li><a href="https://www.youtube.com/channel/UCzBNzCPfUbPPcyFixJAmCLA">Youtube</a></li>
+                                                <li><a href="https://milestonebvl.blogspot.com/">Blogpost</a></li>
+                                                <li><a href="https://pin.it/6OJHa56">Pinterest</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact">CONTACT US</a></li>
@@ -260,7 +260,7 @@
                     </div>
                 </div>
                 <!-- Mobile Menu -->
-                <div class="col-12">
+                <div class="col-12 header-stick">
                     <div class="mobile_menu d-block d-lg-none"></div>
                 </div>
             </div>
