@@ -135,28 +135,28 @@
                                     ?>
                                 </div>
                         </div>
-                        <div class="col-lg-5 mb-5 mb-lg-0">
+                        <div class="col-lg-8 mb-5 mb-lg-0" style="width: 100%; padding-right: 20px;">
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="#">
                                         <h2 style="position: absolute; top: 20px; margin-bottom: 20px;"> <?php echo $productname; ?></h2>
                                     </a>
                                     <p>
                                         <?php 
-                                                echo '<table class="table" >';
+                                                echo '<table class="table-prod" >';
                                                 foreach($array as $key=>$value) {
                                                     foreach($value as $k=>$v) {
-							if ($k == 'Category') {
-								continue;
-							}
+							// if ($k == 'Category') {
+							// 	continue;
+							// }
                                                     	if($k=='Additional Info') {
-                                                            echo '<tr style="white-space: pre-line"class="table-success"><td>'.$k.'</td><td>'.$v.'</td></tr>';
+                                                            echo '<tr style="white-space: pre-line;"><td>'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
                                                         }
 							
                                                         else if($k=='Link') {
-                                                            echo '<tr class="table-success"><td>'.$k.'</td><td><a target="_blank" href='.$v.'>'.$v.'</a></td></tr>';
+                                                            echo '<tr><td>'.$k.'</td><td class="tab-right"><a target="_blank" href='.$v.'>'.$v.'</a></td></tr>';
                                                         }
                                                         else {
-                                                            echo '<tr class="table-success"><td>'.$k.'</td><td>'.$v.'</td></tr>';
+                                                            echo '<tr><td>'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
                                                         }
 						    }
                                                 } 
