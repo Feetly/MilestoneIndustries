@@ -9975,6 +9975,36 @@ div.logo a img {
     color: #0B0773;
 }
 
+.table-prod table, tr{
+    background-color: #ECEDF3;
+    border: 1px solid #B4B5BD;
+}
+
+.table-prod table{
+    width: 100%;
+    color: #8E9099;
+    margin-right: 20px;
+    /*margin-left: 30%;*/
+}
+
+.table-prod td{
+    padding-left: 2%;
+    border-right: 1px solid #B4B5BD;
+    padding-right: 5%;
+    width: auto;
+}
+
+.table-prod tr{
+    width: 200%;
+}
+
+.tab-right {
+    padding-right: 5px;
+    margin-left: 30px;
+    float: right;
+    text-overflow: 
+}
+
 /* .header-area {
     text-transform: capitalize;
 } */
