@@ -7978,11 +7978,7 @@ hero-btn {
     font-size: 27px;
     font-weight: 600;
     margin-bottom: 20px;
-}
-.contact-title {
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .form-contact .form-msg textarea {
     width: 800px;
@@ -10005,6 +10001,19 @@ div.logo a img {
     text-overflow: 
 }
 
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 /* .header-area {
     text-transform: capitalize;
 } */
