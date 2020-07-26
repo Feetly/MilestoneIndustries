@@ -7982,8 +7982,9 @@ hero-btn {
 }
 .form-contact .form-msg textarea {
     width: 800px;
-    height: 300px;
+    height: height: auto;
     border-radius: 8px;
+    margin-bottom: 1%;
 }
 .form-contact .form-name input {
     width: 380px;
@@ -9762,6 +9763,7 @@ div.logo a img {
     
     .form-contact .form-msg textarea {
         width: 80%;
+	height: auto;
         margin-left: 10%;
         height: 30%;
     }
