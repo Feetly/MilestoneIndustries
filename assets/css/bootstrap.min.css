@@ -50,10 +50,6 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
 }
 
 @-ms-viewport {
@@ -82,10 +78,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
+    background-color: #fff
 }
 
 [tabindex="-1"]:focus {

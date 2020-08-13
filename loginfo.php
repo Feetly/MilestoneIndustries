@@ -1,10 +1,8 @@
 <?php 
 	//while checking in your system, please make valid changes here 
 	$servername 	= "localhost";
-	$username   	= "mbvlin";
+	$username   	= "root";
 	$password   	= "";
-	//$username   	= "root";
-	//$password   	= "";
 
 
     //data base for emails (subscription)
@@ -34,7 +32,7 @@
     $feedback_table = "feedback";
 
     $sender_email = 'donotreply@mbvl.in';
-    $sender_password = '';
+    $sender_password = ';';
 	
 	$sender_email_up = 'updates@mbvl.in';
     $sender_password_up = '';

@@ -43,7 +43,7 @@
                 <h2>Greetings From Milestone , <br>
                 You have subscribed to our channel successfully !!!
                 </h2>
-                <h3><a href="mbvl.in/backend/unsub.php?email='.$reciever_email.'">Click here to unsubscribe</a></h3>
+                <h3><a href="#">Click here to unsubscribe</a></h3>
             ';
             //  href link : path/unsub.php?email='.$reciever_email.'
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';

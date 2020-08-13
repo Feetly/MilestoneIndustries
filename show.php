@@ -1,6 +1,61 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
+<head>
+    <!-- This is for url rewrite -->
+    <!-- when using in local machine , use path to the assets folder here instaed of "/" from root directoryy i.e. /www/html/-->
+    <!-- ex : if your assets folder is /www/html/MilstoneIndustries/  the replace "/" by "/MilstoneIndustries/"-->
+    <base href="/"/>
+    <!-- <base href="/Milstone/MilestoneIndustries/"/> -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Business HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+</head>
+
+<body class="body-bg">
+    <!--? Preloader Start--> 
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+<?php
+    require_once "header.php" ; 
+?>
+
+<script>
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+</script>
 <?php
     // echo $_SERVER['HTTP_HOST'];
     //path to product file (json , images)
@@ -57,53 +112,8 @@
     $array = json_decode($jsondata,true);
 
     //debug using print_r($array);
-?>
 
 
-<head>
-    <!-- This is for url rewrite -->
-    <!-- when using in local machine , use path to the assets folder here instaed of "/" from root directoryy i.e. /www/html/-->
-    <!-- ex : if your assets folder is /www/html/MilstoneIndustries/  the replace "/" by "/MilstoneIndustries/"-->
-    <base href="/"/>
-    <!-- <base href="/Milstone/MilestoneIndustries/"/> -->
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> <?php echo $productname; ?> </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
-</head>
-
-<body class="body-bg">
-    <!--? Preloader Start--> 
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div> 
-<?php
-    require_once "header.php" ; 
 ?>
 
 <main>
@@ -138,27 +148,16 @@
                         <div class="col-lg-5 mb-5 mb-lg-0">
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="#">
-                                        <h2 style="position: absolute; top: 20px; margin-bottom: 20px;"> <?php echo $productname; ?></h2>
+                                        <h2> <?php echo $productname; ?></h2>
                                     </a>
                                     <p>
                                         <?php 
-                                                echo '<table class="table" >';
+                                                echo '<table class="table">';
                                                 foreach($array as $key=>$value) {
                                                     foreach($value as $k=>$v) {
-							if ($k == 'Category') {
-								continue;
-							}
-                                                    	if($k=='Additional Info') {
-                                                            echo '<tr style="white-space: pre-line"class="table-success"><td>'.$k.'</td><td>'.$v.'</td></tr>';
-                                                        }
-							
-                                                        else if($k=='Link') {
-                                                            echo '<tr class="table-success"><td>'.$k.'</td><td><a target="_blank" href='.$v.'>'.$v.'</a></td></tr>';
-                                                        }
-                                                        else {
+                                                        if($k!='link')
                                                             echo '<tr class="table-success"><td>'.$k.'</td><td>'.$v.'</td></tr>';
-                                                        }
-						    }
+                                                    }
                                                 } 
                                                 echo '</table>';
                                          ?> 
@@ -166,6 +165,37 @@
                                 </div>
                             </article>
                         </div>
+                    <div class="col-lg-3">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title">Sample Menu</h4>
+                                <ul class="unordered-list">
+                                    <li>
+                                        Category :
+                                            <p><?php echo $array['data']['category']; ?></p>
+                                    </li>
+                                    <li>
+                                            <p style="white-space: pre-line">
+                                                <?php
+                                                    echo $row['prod_description'];
+                                                ?>
+                                            </p>
+                                    </li>
+                                    <li>
+                                            Link :
+                                            <a target="_blank"  href="<?php echo $array['data']['link']; ?>"><?php echo $array['data']['link']; ?></a>
+                                            <button onclick="copyToClipboard('#url')" style="color:black;">copy link</button>
+                                            <input type="hidden"  id="url">
+                                            <script>
+                                                document.getElementById("url").innerHTML=window.location.href;
+                                            </script>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 </main>
 <?php

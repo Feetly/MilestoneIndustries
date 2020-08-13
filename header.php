@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-xl-3 col-lg-3 col-4" style="flex-wrap: nowrap; ">
+                        <div class=" col-xl-3 col-lg-3 col-6" style="flex-wrap: nowrap; ">
                             <div class="menu-wrapper d-flex align-items-center justify-content-end ">
                                 <!-- Main-menu -->
                                  <!--<div class="main-menu d-none d-lg-block "> -->
@@ -221,13 +221,13 @@
                                         <li>
                                             <a href="#">SOCIAL</a>
                                             <ul class="submenu" style="width: 120px;">
-                                                <li><a href="https://twitter.com/Milestone_BVL">Twitter</a></li>
-                                                <li><a href="https://www.facebook.com/Milestone.BVLP">Facebook</a></li>
-                                                <li><a href="https://wa.me/917718050963">Whatsapp</a></li>
-                                                <li><a href="https://www.instagram.com/milestone_business/">Instagram</a></li>
-                                                <li><a href="https://www.youtube.com/channel/UCzBNzCPfUbPPcyFixJAmCLA">Youtube</a></li>
-                                                <li><a href="https://milestonebvl.blogspot.com/">Blogpost</a></li>
-                                                <li><a href="https://pin.it/6OJHa56">Pinterest</a></li>
+                                                <li><a href="updating.php">Twitter</a></li>
+                                                <li><a href="updating.php">Facebook</a></li>
+                                                <li><a href="updating.php">Whatsapp</a></li>
+                                                <li><a href="updating.php">Instagram</a></li>
+                                                <li><a href="updating.php">Youtube</a></li>
+                                                <li><a href="updating.php">Blogpost</a></li>
+                                                <li><a href="updating.php">Pinterest</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact">CONTACT US</a></li>

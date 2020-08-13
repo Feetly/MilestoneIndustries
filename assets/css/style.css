@@ -9761,7 +9761,7 @@ div.logo a img {
     
     .mobile_menu {
         padding-top: 15px;
-        padding-right: 10px;
+        padding-right: 0px;
     }
     
     .form-contact .form-msg textarea {
@@ -9818,8 +9818,8 @@ div.logo a img {
     }
     
     .input-group .form-control {
-        width: 60% !important;
-        right: 30%;
+        width: 40% !important;
+        right: 55%;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
@@ -9830,7 +9830,7 @@ div.logo a img {
     }
     
     .input-group .btn-secondary {
-        right: 0%;
+        right: 35%;
     }
     
     #output {
@@ -9940,10 +9940,10 @@ div.logo a img {
     background-color: #EDF0DA;
 }
 .search-list ul li {
-    margin-left: 250px;
+    /*margin-left: 250px;*/
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 900px;
+    /*width: 900px;*/
     height: 230px;
     border: 1px solid #E1EE91;
     border-radius: 10px;

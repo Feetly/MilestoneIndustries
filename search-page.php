@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Search Page </title>
+    <title>Business HTML-5 Template </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -108,6 +108,7 @@ html,body
 <main>
     <div class="search-list">
         <div class="row">
+	<div class="col-12">
         <ul>
             <?php
 
@@ -131,7 +132,7 @@ html,body
                                 <li>
                                         <img src='.$image_path.'>
                                         <h3>'.$row[$product_name].'</h3>
-                                        <p>Brand : '.$array['data']['Brand'].'</p>
+                                        <p>Brand : '.$array['data']['brand'].'</p>
                                         <span> Category : '.$row[$category].'</span>
                                     
                                 </li>
@@ -148,6 +149,7 @@ html,body
 
             ?>
         </ul>
+</div>
     </div>
     </div>
 

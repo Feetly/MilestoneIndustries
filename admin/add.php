@@ -114,7 +114,7 @@
             <input type="text" class="form-control" name="model-name"       autocomplete="off" placeholder="Model Name/Number"><br>
             <input type="text" class="form-control" name="usage"            autocomplete="off" placeholder="Usage/Application"><br>
             <input type="text" class="form-control" name="wattage"          autocomplete="off" placeholder="Wattage"><br>
-	    <textarea class="form-control rounded-0" placeholder="Color" autocomplete="off" name="color" rows="3"></textarea><br>
+            <input type="text" class="form-control" name="color"            autocomplete="off" placeholder="Color"><br>
             <input type="text" class="form-control" name="place-of-origin"  autocomplete="off" placeholder="Place Of Origin"><br>
             <input type="text" class="form-control" name="no-of-jars"       autocomplete="off" placeholder="No Of jars"><br>
             <input type="text" class="form-control" name="voltage"          autocomplete="off" placeholder="voltage"><br>
@@ -124,10 +124,10 @@
             <input type="text" class="form-control" name="housing"          autocomplete="off" placeholder="Housing"><br>
             <input type="text" class="form-control" name="certification"    autocomplete="off" placeholder="Certification"><br>
             <input type="text" class="form-control" name="dimensions"       autocomplete="off" placeholder="Dimensions"><br>
-	    <textarea class="form-control rounded-0" placeholder="Box Content" autocomplete="off" name="box-content" rows="3"></textarea><br>
+            <input type="text" class="form-control" name="box-content"      autocomplete="off" placeholder="Box Content"><br>
             <input type="text" class="form-control" name="nblades"          autocomplete="off" placeholder="Number Of blades"><br>
             <input type="text" class="form-control" name="bodyshape"        autocomplete="off" placeholder="Body shape"><br>
-            <textarea class="form-control rounded-0" placeholder="Additional Info" autocomplete="off" name="additionalinfo" rows="3"></textarea><br>
+            <input type="text" class="form-control" name="additionalinfo"   autocomplete="off" placeholder="Additional Info"><br>
             <textarea class="form-control rounded-0" placeholder="This will be shown on side panel" autocomplete="off" name="sideinfo" rows="3"></textarea>
             <br>
             

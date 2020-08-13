@@ -2,7 +2,6 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta name="p:domain_verify" content="bb9256c1e1d1625430b2e2db2195c067"/>	
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Milestone Business Ventures LLP </title>
@@ -79,10 +78,10 @@
                             <div class="cat-cap ">
                                 <div class="single-team ">
                                     <div class="team-img ">
-                                        <img src="assets/img/gallery/p1.png " alt=" " style="width: 200px;">
+                                        <img src="assets/img/gallery/p1.png " alt=" " style="width: 90px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Mixer%20Grinder">Mixer Grinder</a></h3>
+                                        <h3><a href="# ">Mixer Grinder</a></h3>
                                         <!-- <span>A</span> -->
                                     </div>
                                 </div>
@@ -102,7 +101,7 @@
                                         <img src="assets/img/gallery/p2.png " alt=" " style="width: 90px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Hand%20Blender">Hand Blender</a></h3>
+                                        <h3><a href="# ">Hand Blender</a></h3>
                                         <!-- <span>B</span> -->
                                     </div>
                                 </div>
@@ -120,7 +119,7 @@
                                         <img src="assets/img/gallery/p3.png " alt=" ">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Jucier">Juicer</a></h3>
+                                        <h3><a href="# ">Juicer</a></h3>
                                         <!-- <span>C</span> -->
                                     </div>
                                 </div>
@@ -138,7 +137,7 @@
                                         <img src="assets/img/gallery/p4.png " alt=" " style="width:70px">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Tower%20Fan">Tower Fan</a></h3>
+                                        <h3><a href="# ">Tower Fan</a></h3>
                                         <!-- <span>H</span> -->
                                     </div>
                                 </div>
@@ -152,10 +151,10 @@
                             <div class="cat-cap ">
                                 <div class="single-team ">
                                     <div class="team-img ">
-                                        <img src="assets/img/gallery/p5.png " alt=" " style="width:200px;">
+                                        <img src="assets/img/gallery/p5.png " alt=" " style="width:160px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Pressure%20Cookerr">Pressure Cooker</a></h3>
+                                        <h3><a href="# ">Pressure Cooker</a></h3>
                                         <!-- <span>D</span> -->
                                     </div>
                                 </div>
@@ -175,7 +174,7 @@
                                         <img src="assets/img/gallery/p6.png " alt=" ">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Non%20Stick%20Cookware">Non Stick Cookware</a></h3>
+                                        <h3><a href="# ">Non Stick Cookware</a></h3>
                                         <!-- <span>E</span> -->
                                     </div>
                                 </div>
@@ -193,7 +192,7 @@
                                         <img src="assets/img/gallery/p7.png " alt=" " style="width: 200px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Kictchenware">Stainless&nbsp;Steel&nbsp;Kitchenware</a></h3>
+                                        <h3><a href="# ">Stainless&nbsp;Steel&nbsp;Kitchenware</a></h3>
                                         <!-- <span>F</span> -->
                                     </div>
                                 </div>
@@ -211,7 +210,7 @@
                                         <img src="assets/img/gallery/p8.png " alt=" " style="width:210px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Gas%20Stove">Gas Stove</a></h3>
+                                        <h3><a href="# ">Gas Stove</a></h3>
                                         <!-- <span>G</span> -->
                                     </div>
                                 </div>
