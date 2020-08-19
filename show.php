@@ -38,6 +38,7 @@
     $productfile = $row[$product_file];
     $mainframe   = $row[$mainFrame];
 
+    $urlOfproduct = "product/$productfile/$productId";
 
     $sideinfo = $row['prod_description'];
 
@@ -135,28 +136,30 @@
                                     ?>
                                 </div>
                         </div>
-                        <div class="col-lg-8 mb-5 mb-lg-0" style="width: 100%; padding-right: 20px;">
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="#">
+                        <div class="col-lg-8 mb-5 mb-lg-0">
+                                <div class="blog_details" style="margin-left: 2vw;padding-right: 3vw;">
+                                   <?php 
+                                        echo '<a class="d-inline-block" href='.$urlOfproduct.'>';
+									?> 
                                         <h2 style="position: absolute; top: 20px; margin-bottom: 20px;"> <?php echo $productname; ?></h2>
                                     </a>
                                     <p>
                                         <?php 
-                                                echo '<table class="table-prod" >';
+                                                echo '<table class="table table-striped" >';
                                                 foreach($array as $key=>$value) {
                                                     foreach($value as $k=>$v) {
-							// if ($k == 'Category') {
-							// 	continue;
-							// }
+							if ($k == 'Category') {
+								continue;
+							}
                                                     	if($k=='Additional Info') {
-                                                            echo '<tr style="white-space: pre-line;"><td>'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
+                                                            echo '<tr style="white-space: pre-line "><td style="width: 200vw">'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
                                                         }
 							
                                                         else if($k=='Link') {
-                                                            echo '<tr><td>'.$k.'</td><td class="tab-right"><a target="_blank" href='.$v.'>'.$v.'</a></td></tr>';
+                                                            echo '<tr ><td style="width: 200vw">'.$k.'</td><td class="tab-right"><a target="_blank" href='.$v.'>'.$v.'</a></td></tr>';
                                                         }
                                                         else {
-                                                            echo '<tr><td>'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
+                                                            echo '<tr ><td style="width: 200vw">'.$k.'</td><td class="tab-right">'.$v.'</td></tr>';
                                                         }
 						    }
                                                 } 

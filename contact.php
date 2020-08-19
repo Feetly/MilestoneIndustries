@@ -69,7 +69,7 @@
         <!-- ================ contact section start ================= -->
         <section class="contact-section">
             <div class="container">
-                <div class="d-none d-sm-block mb-5 pb-4">
+                <!-- <div class="d-none d-sm-block mb-5 pb-4"> -->
                     <!-- <div id="map" style="height: 480px; position: relative; overflow: hidden;">
                         <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                             <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
@@ -243,8 +243,8 @@
                     </div> -->
 
                     <!-- this div is for map -->
-                    <div class="section">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.506224427294!2d72.82398501498047!3d18.95323798715848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfabad9ebd25%3A0xd853a08e2ce24f9a!2sMilestone%20Industries!5e0!3m2!1sen!2sin!4v1594631850228!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.506224427294!2d72.82398501498047!3d18.95323798715848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfabad9ebd25%3A0xd853a08e2ce24f9a!2sMilestone%20Industries!5e0!3m2!1sen!2sin!4v1594631850228!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
                     </div>
 
                     <script>
@@ -280,7 +280,7 @@
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                     </script>
 
-                </div>
+                <!-- </div> -->
                 <script type="text/javascript">
                     $(document).ready(function() {
                         $("#ValidateOtp,#otpinfo").click(function(e) {
@@ -381,27 +381,27 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-msg">
-                                    <textarea name="message" id="message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"  required></textarea>
+                                    <input type="text" name="message" id="message" onfocus="this.placeholder = 'Enter your message'" onblur="this.placeholder = 'Enter your message'" placeholder="Enter your message" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-name">
-                                        <input  name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
+                                        <input  name="name" id="name" type="text" onfocus="this.placeholder = 'Enter your name'" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-email">
-                                        <input name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
+                                        <input name="email" id="email" type="email" onfocus="this.placeholder = 'Enter email address'" onblur="this.placeholder = 'Enter email address'" placeholder="Enter email address" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-subject">
-                                        <input name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject" required>
+                                        <input name="subject" id="subject" type="text" onfocus="this.placeholder = 'Enter Subject'" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject" required>
                                     </div>
                                 </div> 
                                 <div class="col-sm-6">
                                     <div class="form-subject">
-                                        <input name="cellno" style="width:100%" id="cellno" type="text" pattern="[0-9]+" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter you cellno'" placeholder="Cell No." required>
+                                        <input name="cellno" style="width:auto;" id="cellno" type="text" pattern="[0-9]+" onfocus="this.placeholder = 'Enter you cellno'" onblur="this.placeholder = 'Enter you cellno'" placeholder="Enter you cellno" required>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@
                     </div>
                     <div id="otp-status" style="position:absolute;bottom:28%;right:43%;" >
                     </div>
-                    <div id="fillform" style="position:absolute;bottom:30%;right:48%;" >
+                    <div id="fillform" style="position:absolute;bottom:123vh;right:65vw;" >
                     </div>
                     
                     <div class="col-lg-3 offset-lg-1">

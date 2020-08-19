@@ -6,15 +6,19 @@
 
     //for security...
     session_start();
+    //echo $_SESSION['username'];
+    //echo $_SESSION['password'];
+    //die("kvkug");
 
-    if(($_SESSION['username'] && $_SESSION['password'])) {
+    if(isset($_SESSION['username']) && isset($_SESSION['password']) && $_SESSION['username']=="admin" && $_SESSION['password']=="admin") {
         //render this page
     } else if($_POST['username']=="admin" && $_POST['password']=="admin") {
         $_SESSION['username'] = "admin";
         $_SESSION['password'] = "admin";
     } else {
         session_destroy();
-        header('location:index.php?status=1');
+        //header("location:index.php?status=1");
+        echo '<script> window.location = "index.php?status=1" </script>';
     }
 
     //to desplay no of product currently present on website

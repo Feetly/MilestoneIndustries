@@ -1,10 +1,8 @@
 <?php 
-	//while checking in your system, please make valid changes here 
-	$servername 	= "localhost";
-	$username   	= "mbvlin";
-	$password   	= "";
-	//$username   	= "root";
-	//$password   	= "";
+    //while checking in your system, please make valid changes here 
+    $servername 	= "localhost";
+    $username   	= "root";
+    $password   	= "";
 
 
     //data base for emails (subscription)
@@ -18,12 +16,12 @@
     //database of products
     //product table :
     $product_database	= "mbvlin_products";
-	$product_table  = "product";
+    $product_table  = "product";
     $product_name   = "prod_name";
     $product_sideinfo   = "prod_description";
     $product_id     = "id";
-	$product_file   = "prod_file"; 
-	$mainFrame 		= "mainFrame";
+    $product_file   = "prod_file"; 
+    $mainFrame 		= "mainFrame";
     $category       = "categories";
 
     //categories table :
@@ -36,7 +34,7 @@
     $sender_email = 'donotreply@mbvl.in';
     $sender_password = '';
 	
-	$sender_email_up = 'updates@mbvl.in';
+    $sender_email_up = 'updates@mbvl.in';
     $sender_password_up = '';
 	
     $otpTime = 1;

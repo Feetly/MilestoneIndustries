@@ -8,14 +8,13 @@
 <!--for search box-->
 <style>
     #output li a {
-        border: 0px solid #ddd;
-        border-radius: 5px;
+        /*border: 0px solid #ddd;*/
         /* Add a border to all links */
-        margin-top: -3px;
+        margin-top: -8vh;
         /* Prevent double borders */
-        background-color: #f6f6f6;
         /* Grey background color */
-        padding-left: 20%;
+        padding-left: 24%;
+		margin-left: 30vw;
         padding-top: 0px;
         /* Add some padding */
         text-decoration: none;
@@ -26,12 +25,11 @@
         /* Add a black text color */
         display: block;
         /* Make it into a block element to fill the whole list */
+		background-color: #FBFDD8;
+        /*border-top: 1px solid #864B08;*/
+		
     }
-    
-    #output li a:hover:not(.header) {
-        background-color: #eee;
-        /* Add a hover effect to all links, except for headers */
-    }
+      
 </style>
 
 <script type="text/javascript">

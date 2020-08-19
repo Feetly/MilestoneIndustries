@@ -68,8 +68,9 @@
         }
         if($res = mysqli_query($conn , $sql)) {
             $count = mysqli_num_rows($res);
+			$output="";
             if($count==0) {
-                $output = "<li class='service-list'><a href='#'>There are no search results !!</a></li>";
+                $output = $output."<li class='service-list'><a href='#'>There are no search results !!</a></li>";
             }
             else {
                 while($row = mysqli_fetch_array($res)) {
@@ -87,7 +88,8 @@
                         $imagepath = $rPATH.'/'.$productFile.'/photos/'.$mainFramephoto;
                     } else $imagepath= $rPATH.'/dummy/default.png';
                     
-                    $output .= '<li class="service-list">
+					
+                    $output = $output.'<li class="service-list">
                         <img width=79px src='.$imagepath.' class="alignnone size-full wp-image-156">
                         <a href='.$urlOfproduct.'>'.$nameOfproduct.'</a>
                     </li><br>';
