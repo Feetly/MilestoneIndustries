@@ -31,10 +31,10 @@
     $otp_table = "otp";
     $feedback_table = "feedback";
 
-    $sender_email = 'donotreply@mbvl.in';
+    $sender_email = 'donotreply';
     $sender_password = '';
 	
-    $sender_email_up = 'updates@mbvl.in';
+    $sender_email_up = 'updates';
     $sender_password_up = '';
 	
     $otpTime = 1;
