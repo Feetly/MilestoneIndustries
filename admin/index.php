@@ -34,8 +34,8 @@
                <div style="width:400px">
                    <h3></h3>
                     <form action="manage.php" method="POST" autocomplete="off">
-                            <input  type="text" class="form-control" name = "username" placeholder="Username"><br><br>
-                            <input  type="password" class="form-control" name="password" placeholder="Password"><br><br>
+                            <input  type="text" class="form-control" name = "username" placeholder="Username" required><br><br>
+                            <input  type="password" class="form-control" name="password" placeholder="Password" required><br><br>
                             <input  type="submit" class="boxed-btn-login" name="submit" value="Log In">
                     </form>
                </div>
@@ -47,9 +47,13 @@
                ?>
                 <h3>
                     <?php
-                        $status = $_GET['status'];
-                        if($status==1)echo "Password/username is Incorrect";
-                        else if($status==2) echo "Please fill both username and password";
+						if (isset($_GET['status'])) {
+							$status = $_GET['status'];
+							if($status==1)
+								echo "Password/username is Incorrect";
+							else if($status==2) 
+								echo "Please fill both username and password";
+						}
                     ?>
                 </h3>
         </center>

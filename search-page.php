@@ -83,7 +83,7 @@ html,body
 
         //take posted data from header.php
         $src = $_POST['search'];
-        $ctg = $_POST['category'];
+        //$ctg = $_POST['category'];
 
         //first take all product from database and then show them (add link to their seperate page)
         if($src != "") {
@@ -107,8 +107,12 @@ html,body
 
 <main>
     <div class="search-list">
+	<div class="container">
         <div class="row">
+		<div class="col-12">
+		
         <ul>
+		
             <?php
 
                 //echo '<h5>
@@ -127,15 +131,17 @@ html,body
                         $array = json_decode($jsondata , true);
 
                         echo '
+						<div class="row">
                             <a href='.$product_link.' style="text-decoration:none">
                                 <li>
                                         <img src='.$image_path.'>
                                         <h3>'.$row[$product_name].'</h3>
                                         <p>Brand : '.$array['data']['Brand'].'</p>
                                         <span> Category : '.$row[$category].'</span>
-                                    
+                                
                                 </li>
                             </a>
+						</div>
                         ';
                     }
                 } else {
@@ -148,7 +154,10 @@ html,body
 
             ?>
         </ul>
-    </div>
+		</div>
+    
+	</div>
+	</div>
     </div>
 
          

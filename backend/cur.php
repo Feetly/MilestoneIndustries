@@ -1,22 +1,46 @@
 <style>
-.service-list {
+.service-list{
+    margin-top: 5px;
+	margin-bottom: 2px;
     list-style-type: none;
-    margin-left:0px;
+    margin-left:2px;
     padding-left:0px;
     width:180%;
+	height: 20%;
+	background-color: #FBFDD8;
+    border-bottom: 1px solid #864B08;
+    
+}
+
+.service-list-notfound{
+    margin-top: -4px;
+    margin-bottom: 2px;
+    list-style-type: none;
+    margin-left:2px;
+    padding-left:0px;
+    width:180%;
+    height: 20%;
+    background-color: #FBFDD8;
+    border: 1px solid #864B08;
+    text-align: center;
 }
 .service-list img
 {
-    margin:2px;
-    float:left;
-    /* box-sizing: content-box; */
+	width: 20%;
+	margin: 3px;
+	margin-top: 6px;
+    /* float:left;*/
+    box-sizing: content-box; 
 }
 .service-list a{
-    margin:0px;
-    text-align: center; 
     width:100%;
-    padding: 0px;
+    float: right;
 }
+
+.service-list :hover{
+    background-color: #eee;
+}
+
 </style>
 
 <?php
@@ -73,10 +97,11 @@
         //else {
             $sql = "select * from $product_table where $product_name like '%$sch%' LIMIT 5";
         //}
+		$output = "<ul style=\"margin-top: 3px;\">";
         if($res = mysqli_query($conn , $sql)) {
             $count = mysqli_num_rows($res);
             if($count==0) {
-                $output = "<li class='service-list'><a href='#'>Not found</a></li>";
+                $output = $output."<li class='service-list-notfound'> Product not found</li></ul>";
             }
             else {
                 while($row = mysqli_fetch_array($res)) {
@@ -97,12 +122,13 @@
                     if(file_exists($path.'/'.$productFile.'/photos/'.$mainFramephoto) && $mainFramephoto!="") {
                         $imagepath = $relpath.$productFile.'/photos/'.$mainFramephoto;
                     } else $imagepath= $relpath.'dummy/default.png';
-
-                    $output .= '<li class="service-list">
-                        <img height="30px" src='.$imagepath.' class="alignnone size-full wp-image-156">
-                        <a href='.$urlOfproduct.'>'.$nameOfproduct.'</a>
+	
+                    $output = $output.'<li class="service-list">
+                      <img height="70%"src='.$imagepath.' class="alignone size-full wp-image-156"><a href='.$urlOfproduct.'>'.$nameOfproduct.'</a>
+                        
                     </li>';
                 }
+                $output = $output."</ul>";
             }
         }
         else echo "ERROR in qry";

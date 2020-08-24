@@ -82,7 +82,7 @@
                                         <img src="assets/img/gallery/p1.png " alt=" " style="width: 200px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Mixer%20Grinder">Mixer Grinder</a></h3>
+                                        <h3><a href="category/Mixer+Grinder">Mixer Grinder</a></h3>
                                         <!-- <span>A</span> -->
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                                         <img src="assets/img/gallery/p2.png " alt=" " style="width: 90px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Hand%20Blender">Hand Blender</a></h3>
+                                        <h3><a href="category/Hand+Blender">Hand Blender</a></h3>
                                         <!-- <span>B</span> -->
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@
                                         <img src="assets/img/gallery/p3.png " alt=" ">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Jucier">Juicer</a></h3>
+                                        <h3><a href="category/Jucier">Juicer</a></h3>
                                         <!-- <span>C</span> -->
                                     </div>
                                 </div>
@@ -138,7 +138,7 @@
                                         <img src="assets/img/gallery/p4.png " alt=" " style="width:70px">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Tower%20Fan">Tower Fan</a></h3>
+                                        <h3><a href="category/Tower+Fan">Tower Fan</a></h3>
                                         <!-- <span>H</span> -->
                                     </div>
                                 </div>
@@ -155,7 +155,7 @@
                                         <img src="assets/img/gallery/p5.png " alt=" " style="width:200px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Pressure%20Cookerr">Pressure Cooker</a></h3>
+                                        <h3><a href="category/Pressure+Cookerr">Pressure Cooker</a></h3>
                                         <!-- <span>D</span> -->
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@
                                         <img src="assets/img/gallery/p6.png " alt=" ">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Non%20Stick%20Cookware">Non Stick Cookware</a></h3>
+                                        <h3><a href="category/Non+Stick+Cookware">Non Stick Cookware</a></h3>
                                         <!-- <span>E</span> -->
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@
                                         <img src="assets/img/gallery/p7.png " alt=" " style="width: 200px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Kictchenware">Stainless&nbsp;Steel&nbsp;Kitchenware</a></h3>
+                                        <h3><a href="category/Kictchenware">Stainless&nbsp;Steel&nbsp;Kitchenware</a></h3>
                                         <!-- <span>F</span> -->
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@
                                         <img src="assets/img/gallery/p8.png " alt=" " style="width:210px;">
                                     </div>
                                     <div class="team-caption ">
-                                        <h3><a href="search/Gas%20Stove">Gas Stove</a></h3>
+                                        <h3><a href="category/Gas+Stove">Gas Stove</a></h3>
                                         <!-- <span>G</span> -->
                                     </div>
                                 </div>

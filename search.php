@@ -1,11 +1,11 @@
-<base href = '/'/>
 <!doctype html>
+<base href="/"/>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Product </title>
+    <title>Product Page </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -98,6 +98,7 @@ html,body
             }
         }
 
+
 ?>
 
 
@@ -105,8 +106,12 @@ html,body
 
 <main>
     <div class="search-list">
+	<div class="container">
         <div class="row">
+		<div class="col-12">
+		
         <ul>
+		
             <?php
 
                 //echo '<h5>
@@ -125,15 +130,17 @@ html,body
                         $array = json_decode($jsondata , true);
 
                         echo '
+						<div class="row">
                             <a href='.$product_link.' style="text-decoration:none">
                                 <li>
                                         <img src='.$image_path.'>
                                         <h3>'.$row[$product_name].'</h3>
                                         <p>Brand : '.$array['data']['Brand'].'</p>
                                         <span> Category : '.$row[$category].'</span>
-                                    
+                                
                                 </li>
                             </a>
+						</div>
                         ';
                     }
                 } else {
@@ -146,7 +153,10 @@ html,body
 
             ?>
         </ul>
-    </div>
+		</div>
+    
+	</div>
+	</div>
     </div>
 
          
