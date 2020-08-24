@@ -9,6 +9,7 @@
 	height: 20%;
 	background-color: #FBFDD8;
     border-bottom: 1px solid #864B08;
+    float: left;
     
 }
 
@@ -28,19 +29,19 @@
 {
 	width: 20%;
 	margin: 3px;
-	margin-top: 6px;
-    /* float:left;*/
+    margin-top: 6px;
+    vertical-align: middle;
+    /* float:left; */
     box-sizing: content-box; 
 }
-.service-list a{
-    width:100%;
-    float: right;
-}
 
-.service-list :hover{
-    background-color: #eee;
+.service-list:hover{
+    background-color: #07b2f0;
 }
-
+.service-list p{
+    display: inline-block;
+    vertical-align: middle;
+}
 </style>
 
 <?php
@@ -123,10 +124,9 @@
                         $imagepath = $relpath.$productFile.'/photos/'.$mainFramephoto;
                     } else $imagepath= $relpath.'dummy/default.png';
 	
-                    $output = $output.'<li class="service-list">
-                      <img height="70%"src='.$imagepath.' class="alignone size-full wp-image-156"><a href='.$urlOfproduct.'>'.$nameOfproduct.'</a>
-                        
-                    </li>';
+                    $output = $output.'<a href='.$urlOfproduct.'>'.'<li class="service-list">
+                      <img height="70%" src='.$imagepath.' class="alignone size-full wp-image-156"><p>'.$nameOfproduct.
+                    '</p></li></a>';
                 }
                 $output = $output."</ul>";
             }

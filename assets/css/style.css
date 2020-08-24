@@ -7986,8 +7986,7 @@ hero-btn {
     border-radius: 5px;
     box-shadow: none;
     border: solid 1px #000;
-	margin-bottom: 1%;
-
+    margin-bottom: 1%;
 }
 .form-contact .form-name input {
     width: 380px;
@@ -9744,82 +9743,89 @@ div.logo a img {
     margin: 0px;
     z-index: 999;
 }
-
-@media screen and (max-width: 320px){
-	.search-list ul li h3 {
-		padding-left: 25 vw;
-	}
-	.search-list ul li p {
-		padding-left: 25 vw;
-	}
-	.search-list ul li span {
-		padding-left: 25 vw;
-	}
+@media screen and (max-width: 320px) {
+    .search-list ul li h3 {
+        padding-left: 25 vw;
+    }
+    
+    .search-list ul li p {
+        padding-left: 25 vw;
+    }
+    
+    .search-list ul li span {
+        padding-left: 25 vw;
+    }
 }
-
-@media screen and (max-width: 768px){
-	.search-list ul li{
-		margin-left: 12vw;
-	}
+@media screen and (max-width: 768px) {
+    .search-list ul li {
+        margin-left: 12vw;
+    }
 }
-@media screen and (max-width: 1024px){
-	.search-list {
-    background-color: #EDF0DA;
-}
-.search-list ul li {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    width: 70vw;
-    height: 20vh;
-    border: 1px solid #E1EE91;
-    border-radius: 10px;
-    background-color: #E1EE91;
-    box-shadow: 5px 5px #9AB208;
-}
-.search-list ul li img {
-    width: 15vw;
-    height: 15vh;
-    margin-top: 20px;
-    margin-left: 30px;
-}
-.search-list ul li h3 {
-    position: relative;
-    top: -120px;
-    padding-left: 30vw;
-    color: #0B0773;
-}
-.search-list ul li p {
-    position: relative;
-    top: -120px;
-    padding-left: 30vw;
-    color: #0B0773;
-}
-.search-list ul li span {
-    position: relative;
-    top: -120px;
-    padding-left: 30vw;
-    color: #0B0773;
-	white-space: nowrap;
-}
+@media screen and (max-width: 1024px) {
+    .search-list {
+        background-color: #EDF0DA;
+    }
+    
+    .search-list ul li {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 70vw;
+        height: 20vh;
+        border: 1px solid #E1EE91;
+        border-radius: 10px;
+        background-color: #E1EE91;
+        box-shadow: 5px 5px #9AB208;
+    }
+    
+    .search-list ul li img {
+        width: 15vw;
+        height: 15vh;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+    .search-list ul li h3 {
+        position: relative;
+        /* top: -120px; */
+        /* padding-left: 30vw; */
+        color: #0B0773;
+    }
+    
+    .search-list ul li p {
+        position: relative;
+        /* top: -120px; */
+        /* padding-left: 30vw; */
+        color: #0B0773;
+    }
+    
+    .search-list ul li span {
+        position: relative;
+        /* top: -120px; */
+        /* padding-left: 30vw; */
+        color: #0B0773;
+        white-space: nowrap;
+    }
 }
 @media screen and (max-width: 600px) {
     ul.tagline {
         visibility: hidden;
     }
     
-	.search-list ul li{
-		margin-left: 12vw;
-	}
-	.search-list ul li h3 {
-		top: -250px;
-	}
-	.search-list ul li p {
-		top: -250px;
-	}
-	.search-list ul li span {
-		top: -250px;
-	}
-	
+    .search-list ul li {
+        margin-left: 12vw;
+    }
+    /* .search-list ul li h3 {
+        top: -250px;
+    }
+    
+    .search-list ul li p {
+        top: -250px;
+    }
+    
+    .search-list ul li span {
+        top: -250px;
+    } */
+    
     .col-xl-6,
     .col-lg-6 {
         padding: 0px 0px;
@@ -9840,7 +9846,6 @@ div.logo a img {
         margin-left: 10%;
     }
     
-	
     .form-contact .form-name input {
         width: 80%;
         margin-left: 10%;
@@ -9865,9 +9870,6 @@ div.logo a img {
     .form-group .button {
         margin-left: 10%;
     }
-	
-
-
     
     .footer-area .footer-top .single-footer-caption .sub-box {
         right: 20%;
@@ -10010,75 +10012,80 @@ div.logo a img {
     float: right;
     color: #96989E;
 }
-
 .search-list {
     background-color: #EDF0DA;
 }
 .search-list ul li {
     margin-top: 30px;
-    margin-bottom: 20px;
     width: 70vw;
-    height: 20vh;
+    /* height: 20vh; */
+    
     border: 1px solid #E1EE91;
     border-radius: 10px;
     background-color: #E1EE91;
     box-shadow: 5px 5px #9AB208;
+    display: inline-block;
 }
 .search-list ul li img {
-    width: 15vw;
-    height: 15vh;
+    width: 30%;
+    height: 30%;
     margin-top: 20px;
     margin-left: 30px;
+    vertical-align: middle;
+    /* float: left; */
 }
 .search-list ul li h3 {
     position: relative;
-    top: -120px;
-    padding-left: 30vw;
+    /* top: -120px; */
+    /* padding-left: 30vw; */
+    
     color: #0B0773;
 }
 .search-list ul li p {
     position: relative;
-    top: -120px;
-    padding-left: 30vw;
+    /* top: -120px; */
+    /* padding-left: 30vw; */
+    
     color: #0B0773;
 }
 .search-list ul li span {
     position: relative;
-    top: -120px;
-    padding-left: 30vw;
+    /* top: -120px; */
+    /* padding-left: 10vw; */
+    
     color: #0B0773;
-	white-space: nowrap;
+    white-space: nowrap;
 }
-.table-prod table, tr{
+.search-list .contain {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.table-prod table,
+tr {
     background-color: #ECEDF3;
-	
 }
-
-.table-prod table{
+.table-prod table {
     width: 100%;
     color: #8E9099;
     margin-right: 20px;
     /*margin-left: 30%;*/
 }
-
-.table-prod td{
+.table-prod td {
     padding-left: 2%;
     border-right: 1px solid #B4B5BD;
     padding-right: 5%;
     width: 50%;
 }
-
-.table-prod tr{
+.table-prod tr {
     width: 200%;
 }
-
 .tab-right {
     padding-right: 5px;
     margin-left: 50px;
     float: right;
-    text-overflow: 
+    text-overflow:
 }
-
 .map-container {
     overflow: hidden;
     padding-bottom: 56.25%;

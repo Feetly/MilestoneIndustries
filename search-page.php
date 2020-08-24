@@ -131,15 +131,15 @@ html,body
                         $array = json_decode($jsondata , true);
 
                         echo '
-						<div class="row">
+						<div style="white-space: normal;">
                             <a href='.$product_link.' style="text-decoration:none">
-                                <li>
+                                <li><div>
                                         <img src='.$image_path.'>
-                                        <h3>'.$row[$product_name].'</h3>
+                                        <div class="contain"><h3>'.$row[$product_name].'</h3>
                                         <p>Brand : '.$array['data']['Brand'].'</p>
                                         <span> Category : '.$row[$category].'</span>
-                                
-                                </li>
+                                        </div>
+                                </div></li>
                             </a>
 						</div>
                         ';
