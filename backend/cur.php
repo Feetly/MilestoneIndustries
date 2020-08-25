@@ -125,8 +125,8 @@
                     } else $imagepath= $relpath.'dummy/default.png';
 	
                     $output = $output.'<a href='.$urlOfproduct.'>'.'<li class="service-list">
-                      <img height="70%" src='.$imagepath.' class="alignone size-full wp-image-156"><p>'.$nameOfproduct.
-                    '</p></li></a>';
+                      <img height="70%" src='.$imagepath.' class="alignone size-full wp-image-156" style="vertical-align: middle;float:left"><span style="vertical-align: middle;overflow:hidden;">'.$nameOfproduct.
+                    '</span></li></a>';
                 }
                 $output = $output."</ul>";
             }
