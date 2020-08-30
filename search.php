@@ -1,11 +1,10 @@
 <!doctype html>
-<base href="/"/>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Product Page </title>
+    <title>Search Page </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -78,25 +77,25 @@ html,body
         die("Error while using database !!");
     }
 
-        //echo $_POST['search'].'<br>';
-        //echo $_POST['category'].'<br>';
+	//echo $_POST['search'].'<br>';
+	//echo $_POST['category'].'<br>';
 
-        //take posted data from header.php
-        $src = $_REQUEST['search'];
-        //$ctg = $_POST['category'];
+	//take posted data from header.php
+	$src = $_REQUEST['search'];
+	//$ctg = $_POST['category'];
 
-        //first take all product from database and then show them (add link to their seperate page)
-        if($src != "") {
-            $sql = "select * from $product_table where $category like '%$src%'";
-            $res = mysqli_query($conn , $sql);
-            if(!$res) {
-                echo "[-] Error while querying in product database";
-            } else {
-                //while($row = mysqli_fetch_assoc($res)) {
-                    //echo $row[$product_name].'<br>';
-                //}
-            }
-        }
+	//first take all product from database and then show them (add link to their seperate page)
+	if($src != "") {
+		$sql = "select * from $product_table where $category like '%$src%'";
+		$res = mysqli_query($conn , $sql);
+		if(!$res) {
+			echo "[-] Error while querying in product database";
+		} else {
+			//while($row = mysqli_fetch_assoc($res)) {
+				//echo $row[$product_name].'<br>';
+			//}
+		}
+	}
 
 
 ?>
@@ -105,11 +104,7 @@ html,body
 
 
 <main>
-    <div class="search-list">
-	<div class="container">
-        <div class="row">
-		<div class="col-12">
-		
+  
         <ul>
 		
             <?php
@@ -130,17 +125,27 @@ html,body
                         $array = json_decode($jsondata , true);
 
                         echo '
-						<div class="row">
-                            <a href='.$product_link.' style="text-decoration:none">
-                                <li>
-                                        <img src='.$image_path.'>
-                                        <h3>'.$row[$product_name].'</h3>
-                                        <p>Brand : '.$array['data']['Brand'].'</p>
-                                        <span> Category : '.$row[$category].'</span>
+                            <div class="container justify-content-start">
+                            <a href='.$product_link.' style="text-decoration:none;">
+                                 <li style="border-radius: 5px; border-top: 2px solid #EBEDEE; " class="mb-3 d-flex shadow bd-highlight py-md-2 col-lg-8 offset-lg-2">    
                                 
+                                    <div class="row">
+                                    	<div class="container col-md-3 col-lg-2 col-4 offset-1  offset-lg-2  mb-2 mt-2 mt-md-0 mb-md-0 ">
+                                		<div class="row">
+                                        <img src='.$image_path.'  class="col-12 my-3 my-md-0 my-lg-4 col-md-12 img-thumbnail">
+                                        </div>
+                                        </div>
+                                        <div class="container col-md-6 col-6 ">
+                                        <h4 class="d-none d-sm-block ">'.$row[$product_name].'</h4>
+                                        <h5 class="d-sm-none">'.$row[$product_name].'</h4>
+                                        <p>Brand : '.$array['data']['Brand'].'</p>
+                                        <span >Category : '.$row[$category].'</span>
+                                 
+                                        </div>
+                                    </div>  
                                 </li>
                             </a>
-						</div>
+                            </div>
                         ';
                     }
                 } else {
@@ -150,14 +155,9 @@ html,body
                         </div>
                     ";
                 }
-
+ 
             ?>
         </ul>
-		</div>
-    
-	</div>
-	</div>
-    </div>
 
          
 </main>
